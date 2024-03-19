@@ -2,7 +2,6 @@ import Link from "next/link";
 import React from "react";
 
 const Layout = ({ children }) => {
-    
   return (
     <main>
       <aside className="w-[300px] h-screen border-r shadow-lg rounded-md fixed ">
@@ -26,7 +25,7 @@ const Layout = ({ children }) => {
           </li>
           <li className="text-lg cursor-pointer leading-[2.5]">
             <i className="ri-feedback-line pe-5"></i>
-            feedbacks
+            <Link href="/master/feedback">feedbacks</Link>
           </li>
         </ul>
       </aside>
